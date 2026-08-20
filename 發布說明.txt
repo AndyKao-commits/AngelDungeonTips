@@ -1,0 +1,34 @@
+AngelDungeonTips — 討論區發布方式
+================================
+
+給使用者（最簡）
+----------------
+上傳「AngelDungeonTips.zip」到討論區。
+對方只要：下載 → 解壓 → 雙擊 AngelDungeonTips.exe。
+
+不必安裝 Visual Studio，也不必另外裝 .NET。
+
+
+給你自己（更新攻略後重新打包）
+------------------------------
+在專案資料夾雙擊或於 PowerShell 執行：
+
+  .\publish-release.ps1
+
+完成後桌面會出現：
+
+  AngelDungeonTips-Release\AngelDungeonTips.zip   ← 丟討論區這個
+  AngelDungeonTips-Release\publish\              ← 本機測試用
+
+
+為什麼用 ZIP 單檔
+----------------
+- 一個壓縮檔，討論區附件最省事
+- self-contained：對方沒裝 .NET 也能開
+- 攻略已內建；想改可編「文件\AngelDungeonTips\dungeons.json」
+
+
+可選：更小的下載（進階）
+------------------------
+若 ZIP 太大，可改發「需安裝 .NET 8 桌面執行階段」的精簡版，
+並在文中附上微軟下載連結。一般新人建議仍用 self-contained ZIP。

@@ -1,0 +1,12 @@
+# 維護者：遠端攻略（不要放進討論區文案）
+
+1. 在公開 GitHub 倉庫上傳 `data/dungeons.json`（本專案根目錄已有一份）。
+2. 取得 raw 網址，例如：
+   https://raw.githubusercontent.com/<帳號>/<倉庫>/main/dungeons.json
+3. 把該網址寫入（擇一即可）：
+   - `AngelDungeonTips/Data/catalog.url` 檔案內「一行網址」（建議，改完重新打包）
+   - 或 `RemoteConfig.cs` 的 `CatalogUrl` 常數
+4. 執行 `publish-release.ps1` 再發佈 ZIP。
+5. 之後只要改 GitHub 上的 JSON 並 push，使用者重開程式就會「更新成功」。
+
+使用者介面不會顯示任何來源名稱或網址。
